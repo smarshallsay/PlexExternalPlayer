@@ -60,7 +60,7 @@ var makeRequest = function(url){
            onreadystatechange: function(state) {
                if (state.readyState === 4) {
                    if (state.status !== 200) {
-                        showToast('Error calling: ' + url + '. Response: ' + error.responseText + ' Code:' + error.status + ' Message: ' + error.statusText, 1);  
+                        showToast('Error calling: ' + url + '. Response: ' + state.responseText + ' Code:' + state.status + ' Message: ' + state.statusText, 1);  
                    } 
                } 
                
